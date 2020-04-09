@@ -34,23 +34,26 @@
 
 					<header class="align-center">
 						<h2>Au préalable</h2>
-						<p>Pour la bonne réalisation de ces expériences, un travail a du être fait au préalable. Nous avons du cartographier la FabLab afin de voir quels étaient les endroit où le champ electromagnétique était le plus faible. Nous avons également réalisé un protocole de branchement des capteurs dans les plantes.
+						<p>Trois expériences ont été proposées par le FabLab. Pour la bonne réalisation de ces expériences, un travail a du être fait au préalable. Nous avons du cartographier le FabLab, afin de voir quels étaient les endroit où le champ electromagnétique était le plus faible. Nous avons également réalisé un protocole de branchement des capteurs dans les plantes.
 						</p>
 					</header>
 
 					<h3>Cartographie du FabLab</h3>
-					<p>Nous avons du trouver un lieu au sein du FabLab ou le champs électromagnétique était minime, afin que cela n’influ pas trop sur les expériences menées sur les plantes. En effet, les signaux recueillis sur les plantes sont de l’ordre du mV. Les signaux déjà présents, pouvant venir des prises électriques ou des ordinateurs par exemple, peuvent venir interférer avec les signaux de la plante. C’est pourquoi nous avons du réaliser cette cartographie du fablab.
-					Les valeurs numériques représentent l’amplitude du signal émis par les objets environnants.</p>
+					<p>Nous avons du trouver un lieu au sein du FabLab ou le champs électromagnétique était minime, afin que cela n’influ pas trop sur les expériences menées sur les plantes. En effet, les signaux recueillis sur les plantes sont de l’ordre du mV. Les signaux déjà présents, pouvant venir des prises électriques ou des ordinateurs par exemple, peuvent venir interférer avec les signaux de la plante. C’est pourquoi nous avons du réaliser cette cartographie.</p>
+					<p>Pour réaliser cette cartographie nous avons utilisé un oscilloscope, branché sur une plante et posé sur un chariot (voir photo ci dessous). Nous nous sommes baladé dans tout l'espace d'une FabLab et nous avons noté l'amplitude du signal aux différents endroits qui semblaient propices à l'expériementation sur les plantes.</p>
 
 					<div class="align-center">
 						<img src="images/Carto1.png" alt="carto1" />
 					</div>
+					<p class="align-center"><i>Matériel utilisé pour cartographier le FabLab</i></p>
 
-					<p>Bla</p>
+					<p>Au vu de la longueur du chariot, et de la taille importante de la plante nous avons du découpé le FabLab en petite unité d'un mètre (voir photo ci-dessous).
+					Nous avons ainsi obtenu une carte du FabLab. Les valeurs numériques écitent sur la carte représentent l’amplitude du signal émise.</p>
 
 					<div class="align-center">
 						<img src="images/Carto2.png" alt="carto2" />
 					</div>
+					<p class="align-center"><i>Carte du FabLab comportant les valeurs du champ electromagnétique relevés</i></p>
 
 					<h3>Protocole de captation du signal des plantes</h3>
 					<p>
@@ -65,14 +68,25 @@
 						</ul>
 					</p>
 					<h4>Méthode</h4>
+					<p>
+						<ul>
+							<li>En premier il faut effectuer le formatage de la carte SD sous Unix (FAT) et pas sur Windows. Faire un formatage sans effacer les données car plus rapide.</li>
+							<li>Bien essuyer les tiges de la plante</li>
+							<li>Planter les capteurs dans la plante en veillant à ce que le capteur ne soit pas à l’air libre. Sinon, compléter avec du polystyrène</li>
+							<li>Démarrage des capteurs</li>
+							<li>Lecture de la carte SD</li>
+						</ul>
+						5 minutes d’enregistrement correspondent à environ 25Mo</p>
+
 					<div class="align-center">
 						<img src="images/protocole1.png" alt="protocole1" />
 					</div>
+					<p class="align-center"><i>Photo prise durant le protocole de captation du signal des plantes</i></p>
 
-					<p>blabla</p>
 					<div class="align-center">
 						<img src="images/protocole2.png" alt="protocole2" />
 					</div>
+					<p class="align-center"><i>Zoom sur les capteurs, tenus par le polystyrène dans la plante</i></p>
 
 					<br><br>
 
@@ -87,12 +101,14 @@
 					<div class="align-center">
 						<img src="images/SchemaExpIDRES.png" alt="exp1" />
 					</div>
+					<p class="align-center"><i>Schéma de l'expérience IDRES</i></p>
 
 					<h3>Expérience 2 : Plantes qui roulent vers le soleil</h3>
 					<p>Sur un chariot, on place quatre plantes aux quatre coins du chariot. Les plantes seraient séparées par des cloisons opaques et joueraient le rôle de capteurs biologiques. L’objectif est que grâce à un moteur, le chariot se déplace en fonction du besoin en lumière des plantes.</p>
 					<div class="align-center">
 						<img src="images/SchemaExpSoleil.png" alt="exp2" />
 					</div>
+					<p class="align-center"><i>Schéma de l'expérience des plantes qui roulent vers le soleil</i></p>
 
 					<h3>Expérience 3 : Transformer le signal en son</h3>
 					<p>L’objectif serait de transformer le signal reçu par les plantes en son, à l’aide du SCRIME (Studio de Création et de Recherche en Informatique et Musiques Expérimentales).</p>
