@@ -34,7 +34,12 @@
 
 					<header class="align-center">
 						<h2>Au préalable</h2>
-						<p>Trois expériences ont été proposées par le FabLab. Pour assurer la bonne réalisation de ces expériences, un travail a dû être fait au préalable. Nous avons d’abord dû cartographier le FabLab, afin de voir quels étaient les endroit où le champ électromagnétique était le plus faible. Nous avons ensuite réalisé un protocole de branchement des capteurs dans les plantes.
+						<p>Trois expériences nous ont été proposées par le FabLab. Ces expériences s’inscrivent dans le cadre d’une volonté de modéliser des échanges entre les hommes et les plantes. Pour ce faire, des capteurs ont été prêtés au FabLab par l’entreprise Vegetal Signals. Ces capteurs permettent d’avoir accès à des signaux produits par la plante qui sont de l’ordre du milliVolt. Ce sont ces signaux qui vont nous intéresser ici. À travers ces trois expériences, nous allons cherchons à répondre à la question : les signaux produits pourraient-ils servir à une communication entre les hommes et les plantes ?
+						Pour assurer la bonne réalisation de ces expériences, un travail a dû être fait au préalable. Nous avons d’abord dû cartographier le FabLab, afin de voir quels étaient les endroit où le champ électromagnétique était le plus faible. Dans un même temps, un code en python permettant le traitement du signal émis par la plante a été produit. Nous avons ensuite réalisé un protocole de branchement des capteurs dans les plantes.
+						</p>
+
+						<p>Le choix des plantes s’est porté sur l’espèce arabidopsis thaliana. En effet ces plantes sont très utilisées dans le domaine expérimental en biologie car elles ont un cycle de croissance assez court, de l’ordre de 3 semaines.
+						Néanmoins, après avoir effectué des tests nous nous sommes rendu compte que la très petite taille de ces plantes rendait difficile nos expérimentations, notamment à cause de la taille des capteurs par rapport à celle des plantes. La plupart des tests ont donc été effectué sur des plantes du FabLab, qui avaient pour premier but d’être décoratives.
 						</p>
 					</header>
 
@@ -56,25 +61,30 @@
 
 					<h3>Protocole de captation du signal des plantes</h3>
 					<p>
+						Nous avons réalisé un petit protocole qui permet de brancher les capteurs sur les plantes et de lancer l’enregistrement des signaux produits.
 						<h4>Matériel</h4>
 						<ul>
 							<li>plantes</li>
-							<li>capteurs VegetalSignal</li>
+							<li>capteurs Vegetal Signals : boîtiers + 16 fils par boîtier</li>
 							<li>carte SD</li>
-							<li>tournevis (pour ouvrir les boîtiers)</li>
+							<li>tournevis (pour ouvrir les boîtiers afin d'y insérer la carte SD)</li>
 							<li>polystyrène</li>
 							<li>couteau (pour découper le polystyrène)</li>
 						</ul>
 					</p>
 					<h4>Méthode</h4>
 					<p>
-						<ul>
+						<ol>
 							<li>Effectuer le formatage de la carte SD sous Unix (FAT) et pas sur Windows. Il est préférable de faire un formatage sans effacer les données car plus rapide.</li>
+							<li>Ouvrir le boîtier à l’aide du tournevis et y insérer la carte SD</li>
 							<li>Bien essuyer les tiges de la plante</li>
-							<li>Planter les capteurs dans la plante en veillant à ce que le capteur ne soit pas à l’air libre. Sinon, compléter avec du polystyrène</li>
-							<li>Démarrage des capteurs</li>
-							<li>Lecture de la carte SD</li>
-						</ul>
+							<li>Planter les capteurs dans la plante en veillant à ce que le capteur ne soit pas à l’air libre. Sinon, compléter avec du polystyrène (voir photo)</li>
+							<li>Démarrer les capteurs grâce au bouton ON/OFF placé sur le boîtier</li>
+							<li>Une fois le temps voulu atteint, éteindre le boîtier</li>
+							<li>Retirer délicatement les capteurs de la plante (le polystyrène peut être conservé pour une prochaine fois)</li>
+							<li>Dévisser de nouveau le boitier afin de sortir la carte SD</li>
+							<li>Les données recueillies sur la carte peuvent être lues depuis un ordinateur</li>
+						</ol>
 						5 minutes d’enregistrement correspondent à environ 25Mo</p>
 
 					<div class="align-center">
@@ -91,7 +101,7 @@
 
 					<header class="align-center">
 						<h2>Expériences et Protocoles</h2>
-						<p>Le premier objectif du projet était la réalisation et mise en place de trois protocoles expérimentaux, proposés par le client. Ils ont décrit dans les paragraphes ci-dessous. La mise en place de ces protocoles doit permettre la réalisation des manipulations par des étudiants en décrochage scolaire.<br> Au vu des conditions compliquées dans lesquelles le projet a été réalisé, ces expériences n'ont finalement pas pu être testées.
+						<p>Le premier objectif du projet était la réalisation et mise en place de trois protocoles expérimentaux, proposés par le client. Ils sont décrits dans les paragraphes ci-dessous. La mise en place de ces protocoles doit permettre la réalisation des manipulations par des étudiants en décrochage scolaire.<br> Au vu des conditions compliquées dans lesquelles le projet a été réalisé, ces expériences n'ont finalement pas pu être testées.
 						</p>
 					</header>
 
@@ -111,6 +121,7 @@
 
 					<h3>Expérience 3 : Transformer le signal en son</h3>
 					<p>L’objectif serait de transformer le signal reçu par les plantes en son, à l’aide du SCRIME (Studio de Création et de Recherche en Informatique et Musiques Expérimentales).</p>
+					<p>Code python</p>
 
 				</div>
 			</section>
