@@ -89,7 +89,16 @@
 					panneaux solaires.
 					</p>
 
+					<h3>Traitement du signal</h3>
+					<p>Le signal récupéré par chaque port du capteur est codé sur 3 octets. Le capteur disposant de 8 ports, le message chiffré ainsi obtenu en base 16 a une longueur de 24 bits, soit 26 en comptant les octets de début de ligne et de retour chariot.
+					<br>Les langages de programmation usuels ne pouvant pas extraire les données par paquet de 3 octets, il est nécessaire de rajouter un octet de 0 tous les 3 octets.
+					Ce procédé implique ainsi une division par 256 après extraction des données.
+					<br>Le programme fourni en annexe permet donc de tracer les courbes de chaque port du capteur, de créer un fichier CSV à partir de données, qui servira notamment de base pour transformer le signal en son (expérience 3) et de filtrer le signal.
+					</p>
 
+					<h3>Annexe</h3>
+					<a href="pdf/code.pdf">Code python du traitement de signal</a> <br>
+					<a href="pdf/Doc_ComPlants.pdf">Documentation du précédent projet ComPlant</a>
 
 				</div>
 			</section>
