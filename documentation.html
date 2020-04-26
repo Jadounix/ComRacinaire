@@ -36,15 +36,60 @@
 						<p>Vous trouverez dans cette partie toute la documentation du projet</p>
 					</header>
 
-					<p>Ce projet fait suite aux projet ComPlant réalisé lors de l'année 2018-2019 par des étudiants de l'Ecole Nationale Supérieur de Cognitique, en collaboration avec le FabLab Co@bit. </p>
+					<h3>Vue d'ensemble du projet</h3>
+					<div class="align-center">
+						<img src="images/schemaGlobal.png" alt="schema global" />
+					</div>
 
-					<p>Site du FabLab</p>
+					<h3>Structures impliquées</h3>
+					<p>
+						<ul>
+							<li>Vegetal Signals: Fabian Lebourdiec | <a href="http://vegetalsignals.com/html/home.html"> Site de Vegetal Signals </a></li>
+							<li>SCRIME : Thibaud Keller | <a href="https://scrime.u-bordeaux.fr/"> Site du SCRIME </a></li>
+							<li>Fablab Coh@Bit - IUT Bordeaux: Pierre Grangé-Praderas | <a href="https://www.iut.u-bordeaux.fr/cohabit/"> Site de Coh@bit </a></li>
+							<li>Ecole Nationale Supérieure de Cognitique (ENSC) | <a href="https://ensc.bordeaux-inp.fr/fr"> Site de l'ENSC </a></li>
+							<li>PARI : Sandrine Merigeault</li>
+							<li>Volontaires du Service Civique</li>
+						</ul>
+					</p>
 
-					<p>Site de l'ENSC</p>
+					<h3>Plantes testées</h3>
+					<ul>
+						<li>Arabidopsis Taliana</li>
+						<li>Desmodium Gyrans</li>
+						<li>Tomates</li>
+					</ul>
 
-					<p>Site de Vegetal Signals</p>
+					<h3>Capteurs</h3>
+					<p>Les capteurs utilisés sont contenus dans des boîtiers de 8 ports +/-.
+					On peut donc brancher 8 électrodes, appelées aussi capteurs, à l’aide d’un optocoupleur.
+					<br>Il existe 2 types de mesures :
+					soit 1 couple +/- , soit brancher plusieurs + sauf 1 seul sur le port SRBD qui jouera le rôle de masse.
+					<br>Les électrodes utilisées sont des électrodes d'hôpitaux. Leur longueur est de
+					2,5 cm. On les plante 3 à 5 mm max dans le phloème, le reste de l’électrode
+					est isolé avec du polystyrène. (cf. Partie suivante)
+					</p>
+					<p>Les mesures sont différentielles : deux capteurs sont nécessaires pour
+					effectuer un ensemble de mesure, en effet on mesure une différence de
+					potentiel. Principalement, on place une électrode sur la tige et l'électrode de
+					la masse sur le tronc de la plante.
+					La fréquence d'échantillonnage des capteurs est de 250Hz.
+					</p>
+					<p>Les unités des mesures à mesurer; le grésillement, bruit de l’ordre du microvolt et la porteuse de l'ordre du millivolt.  Les données en tension et en ampères sont donc faibles. Un oscilloscope ne peut pas être utilisé car l’ordre de grandeur du signal mesuré est trop bas.
+					<br>Deux durées de mesures : en temps réel ou en accéléré sur des longues
+					périodes. C’est la deuxième catégorie qui apporte les informations les plus
+					riches et exploitables, car la plante réagit à un ensemble de facteurs, une
+					mesure instantanée sera donc très sujette aux variations.
+					</p>
+					<p>L’autonomie de l'appareil de mesure et mémoire : le boîtier est composé
+					d’une carte micro SD pouvant contenir des mesures sur 53 jours. C’est cette
+					carte qui contient les données qui seront récupérées par la suite. Les données
+					sont chiffrées en hexadécimal 24 bit. Le boîtier est également composé d’une
+					batterie de 8 à 9 jours (soit 4 piles) d’autonomie puis qui bascule sur des
+					panneaux solaires.
+					</p>
 
-					<p>Code traitement du signal</p>
+
 
 				</div>
 			</section>
